@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        /* Slider container ka style */
+        .slider {
+            height: 500px;
+            width: 100%;
+            color: brown;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Slider content ko horizontally arrange karne ke liye */
+        .slidercont {
+            display: flex;
+            width: 800%; /* 8 images ke liye, har image 100% width ka space lega */
+            animation: neo 16s infinite;
+        }
+
+        /* Slider items ka size */
+       
+
+        .slider-item img {
+            width: 100%;
+            height: 100%;
+         
+            object-fit: cover; /* Image ko properly scale karega */
+        }
+
+        /* Keyframes animation */
+        @keyframes neo {
+            0% {
+                transform: translateX(0);
+            }
+           
+            25% {
+                transform: translateX(-25%);
+            }
+          
+            50% {
+                transform: translateX(-50%);
+            }
+            
+            75% {
+                transform: translateX(-75%);
+            }
+            
+            100% {
+                transform: translateX(-0%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slider Container -->
+    <div class="slider">
+        <!-- Slider Content -->
+        <div class="slidercont">
+            <div class="slider-item"><img src="image/imgscr1.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr2.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr3.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr4.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr5.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr3.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr3.jpg" alt=""></div>
+            <div class="slider-item"><img src="image/imgscr4.jpg" alt=""></div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>
